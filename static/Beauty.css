@@ -1,0 +1,196 @@
+
+body {
+    background: linear-gradient(135deg, #d3d3d3, #9db3da);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+/* 渐变样式 */
+.gradient-text {
+    background: linear-gradient(135deg, #a593d9, #d88ed7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.title {
+    text-align: center;
+    font-size: 42px;
+    margin-top: 200px;
+    background: linear-gradient(135deg, #efc2f1, #3a0aca);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.recognition_container {
+    display: grid;
+    justify-content: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.2);  /* 半透明白色 */
+    backdrop-filter: blur(10px);  /* 模糊效果 */
+    max-width: 30%;
+    margin: 100px auto 0 auto;
+}
+
+.upload-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.result_container {
+    box-shadow: 0 0 8px rgb(0, 0, 0);
+    background: rgba(255, 255, 255, 0.2);  /* 半透明白色 */
+    backdrop-filter: blur(10px);  /* 模糊效果 */
+    max-width: 30%;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 50px auto 0 auto;
+
+}
+
+.result {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.searchLinks {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.2s;
+    box-shadow: 0 0 8px rgb(0, 0, 0);
+    background: 0.02;
+    max-width: 30%;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 50px auto 100px auto;
+    gap: 5px;
+}
+
+
+.search-btn:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* 不同平台不同颜色 */
+.search-btn:nth-child(1) { background: #ff6600; }  /* 淘宝橙 */
+.search-btn:nth-child(1):hover { background: #cc5500; }
+
+.search-btn:nth-child(2) { background: #e4393c; }  /* 京东红 */
+.search-btn:nth-child(2):hover { background: #c8161d; }
+
+.search-btn:nth-child(3) { background: #e4393c; }  /* 拼多多粉 */
+.search-btn:nth-child(3):hover { background: #c8161d; }
+
+.search-btn:nth-child(4) { background: #4e6ef2; }  /* 百度蓝 */
+.search-btn:nth-child(4):hover { background: #3b5bdb; }
+
+
+/* 聊天区域样式 */
+.chat_container {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.chat_header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.chat_header span:first-child {
+    font-size: 24px;
+}
+
+.chat_header strong {
+    font-size: 18px;
+}
+
+.chat_header small {
+    font-size: 12px;
+}
+
+#chatMessages {
+    height: 250px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 12px;
+    margin-bottom: 15px;
+    color: rgba(151, 133, 217, 0.8);
+    font-size: 24px;
+    text-align: center;
+
+}
+
+#chatMessages::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chatMessages::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+#chatMessages::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 3px;
+}
+
+
+
+.chat_input_area {
+    display: flex;
+    gap: 12px;
+}
+
+#chatInput {
+    flex: 1;
+    padding: 12px 18px;
+    border-radius: 40px;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+#chatInput::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+#chatInput:focus {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+#sendChatBtn {
+    background: #4e6ef2;
+    border: none;
+    padding: 0 24px;
+    border-radius: 40px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#sendChatBtn:hover {
+    background: #3b5bdb;
+    transform: scale(1.02);
+}

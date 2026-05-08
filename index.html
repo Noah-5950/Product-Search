@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Recognition</title>
+    <link rel="stylesheet" href="/static/Beauty.css">
+
+</head>
+
+<body>
+    <h1 class="title">Image Recognition</h1>
+    <div class="recognition_container">
+        <div class="upload-area">
+            <input type="file" id="fileInput" accept="image/*">
+        </div>
+
+        <button id="recognizeBtn">开始识别</button>
+        <img id="preview" class="preview">
+    </div>
+
+    <div class="result_container">
+        <div id="result" class="result">
+            <strong>识别结果：</strong>
+            <p id="resultText"></p>
+            <div id="resultDetails" style="margin-top: 10px;">
+                <!-- 详细属性会在这里动态显示 -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 电商/搜索入口 -->
+    <div id="searchLinks" class="searchLinks">
+        <!-- 按钮会由 JS 动态生成 -->
+    </div>
+
+
+<!-- 智能推荐助手对话区 -->
+<div id="chatContainer" class="chat_container">
+    <div class="chat_header gradient-text">
+        <strong>商品推荐助手</strong>
+        <small>选购建议查询,参数调整</small>
+    </div>
+
+    <!-- 聊天记录区域 -->
+    <div id="chatMessages" class="chat_messages">
+        <div>
+            如果你需要购买商品,现在或者图像识别后,都可以在这里查询选购建议<br>
+            你可以按这个格式，我需要购买【商品名称】，需要注意什么参数
+        </div>
+    </div>
+
+    <!-- 输入区域 -->
+    <div class="chat_input_area">
+        <input type="text" id="chatInput" placeholder="输入你的问题...">
+        <button id="sendChatBtn">发送</button>
+    </div>
+</div>
+
+
+
+    <script src="/static/connect.js"></script>
+
+</body>
+
+</html>
